@@ -1,8 +1,12 @@
 from distutils.command.clean import clean
+import fileinput
+from io import FileIO
+import os
 import discord
 import commands
 import clean_reponse
 
+discord_token = open("disc_token.cfg", "rt")
 com = commands.Commands
 client = discord.Client()
 
@@ -98,4 +102,4 @@ class APIDiscord(discord.Client):
             await message.channel.send(embed=poop)
 
 
-client.run('TOKEN HERE')
+client.run(discord_token.readline())
