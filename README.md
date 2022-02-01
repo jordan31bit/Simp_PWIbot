@@ -1,6 +1,6 @@
 # SIMP_PWIbot
-### SIMP_PWIBOT is simply a PWI (Perfect world International) discord bot.
-This bot aims to be simple and easy to run on any device that has Python interper installed. 
+### SIMP_PWIbot is simply a PWI (Perfect World International) discord bot.
+This bot aims to be simple and easy to run on any device that has Python interper installed.
 ##### Features:
 
 * Auto check for game server status (not yet fully implemented)
@@ -9,4 +9,4 @@ This bot aims to be simple and easy to run on any device that has Python interpe
 * Create reminders that can have a specific date & time set (not yet implemented)
 * Displays current (active) Blessings/codes
 
-This project is a spare-time project. It is open-sourced and welcomes patches/pull-requests
+This project is a spare-time project. It is open-sourced and welcomes patches/pull-requests.
