@@ -1,9 +1,5 @@
-from ctypes import sizeof
 import socket
 import time
-import math
-from urllib import response
-import clean_reponse
 
 server = ["pwieast2.perfectworld.com", "pwiwest4.perfectworld.com", "pwigc2.perfectworld.com", "pwieu3.en.perfectworld.eu"]
 port = 29000
@@ -36,23 +32,4 @@ class MyClass:
             return("Error: I broke :(")
         soc.close()
         latency.append(1)
-        #clean = clean_reponse.Handle_Responses
-        #latency = clean.cleanServerResp(latency)
         return(latency)
-
-    async def getBlessings() :
-        # return a list of mixed data types
-        return
-
-    # async def autoCheckLatency() :
-    #     print("I'm in here!!!!!")
-    #     qs = MyClass
-    #     foo = await qs.pingServer()
-        
-    #     if list == "🔴" :
-    #         serverStatus = 0
-            
-    #         return list
-    #     else :
-    #         serverStatus = 1
-    #         return list
