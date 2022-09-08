@@ -2,6 +2,7 @@ from ctypes import sizeof
 import socket
 import time
 import math
+from urllib import response
 import clean_reponse
 
 server = ["pwieast2.perfectworld.com", "pwiwest4.perfectworld.com", "pwigc2.perfectworld.com", "pwieu3.en.perfectworld.eu"]
@@ -35,27 +36,23 @@ class MyClass:
             return("Error: I broke :(")
         soc.close()
         latency.append(1)
-        # clean = clean_reponse.Handle_Responses
-        # latency = clean.cleanServerResp(latency)
+        #clean = clean_reponse.Handle_Responses
+        #latency = clean.cleanServerResp(latency)
         return(latency)
 
     async def getBlessings() :
         # return a list of mixed data types
         return
 
-    async def autoCheckLatency() :
-        print("I'm in here!!!!!")
-        state = 0 # 0 assumed up, 1 server is up, 2 server is down
-        tmp = state
-        qs = MyClass
-        list = await qs.pingServer()
-        for x in list :
-            if type(x) in list == str :
-                tmp = ++tmp
-                if state != tmp :
-                    return(list)
-                else :
-                    time.sleep(3)
-            else :
-                tmp = state
-                time.sleep(3)
+    # async def autoCheckLatency() :
+    #     print("I'm in here!!!!!")
+    #     qs = MyClass
+    #     foo = await qs.pingServer()
+        
+    #     if list == "🔴" :
+    #         serverStatus = 0
+            
+    #         return list
+    #     else :
+    #         serverStatus = 1
+    #         return list
